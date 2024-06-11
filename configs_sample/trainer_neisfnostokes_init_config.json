@@ -1,0 +1,22 @@
+{
+    "trainer_name": "TrainerNeISFNoStokes",
+    "data_dir": "YOUR_DIRECTORY_NAME",
+    "dataset_type": "neisf",
+    "experiment_name": "YOUR_EXPERIMENT_NAME",
+    "previous_stage_dir": "PREVIOUS_DIRECTORY_NAME",
+    "previous_stage_epoch_num": 20,
+    "batch_size": 2048,
+    "max_epoch": 20,
+    "sample_num": 64,
+    "illum_sample_num": 256,
+    "positional_encoding_x_res": 6,
+    "positional_encoding_d_res": 6,
+    "gpu_num": 1,
+    "lr": 5.0e-4,
+    "weights": {
+        "eik_weight": 0.1
+    },
+    "use_mask": true,
+    "stage_name": "init",
+    "max_step_ray_march": 100
+}

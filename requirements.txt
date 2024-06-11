@@ -1,0 +1,10 @@
+matplotlib~=3.5.1
+numpy~=1.22.3
+opencv-python~=4.5.5.64
+scikit-image~=0.19.3
+trimesh~=4.2.0
+bpy~=4.0.0
+libigl~=2.4.1
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.11.0+cu113
+
