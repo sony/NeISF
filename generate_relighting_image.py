@@ -1,3 +1,19 @@
+# generate_relighting_image.py
+""" This script renders the scene with an arbitrary environmen map.
+
+USAGE:
+    $ python generate_relighting_image.py {RESULT FOLDER NAME} {IMAGE FOLDER NAME} {EPOCH NUM} {ENV MAP NAME} \
+        -b {BATCH SIZE} -l {ILLUMINATION SAMPLE NUM}
+
+NOTE:
+    to get high-quality images, it is recommended to use `--light_num` larger than 10000.
+    if you encounter GPU memory issue, please use smaller `--batch_size` instead of reducing `--light_num`.
+
+Copyright (c) 2024 Sony Semiconductor Solutions Corporation
+This software is released under the MIT License.
+http://opensource.org/licenses/mit-license.php
+"""
+
 import argparse
 
 from mymodules.trainers import trainer_provider
