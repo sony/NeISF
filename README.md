@@ -134,10 +134,13 @@ Run the following command:
  ```
 
  ### Exporting UV textures and Blender rendered animation
- Run the following command:
+ 1. Locate your environment illumination map (must be EXR format) under [env_maps](./env_maps/).
+ 2. Run the following command:
 ```
 $ python generate_3d_blender_data.py {YOUR RESULT FOLDER} {EPOCH NUM} {MESH RESOLUTION} {ENV MAP NAME}
 ```
+
+Known issues: We have observed some environments where this script can not correctly render videos. In this case, you may use Dockerfile.
 
 ## Dataset
 Here we describe how to prepare your own dataset.
