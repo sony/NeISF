@@ -25,6 +25,8 @@ This project is the implementation of "NeISF: Neural Incident Stokes Field for G
   - [Testing](#testing)
   - [Evaluation](#evaluation)
   - [Exporting 3D mesh from trained SDFs](#exporting-3d-mesh-from-trained-sdfs)
+  - [Re-lighting](#re-lighting)
+  - [Exporting UV textures and Blender rendered animation](#exporting-uv-textures-and-blender-rendered-animation)
 - [Dataset](#dataset)
   - [Polarized images](#polarized-images)
   - [Masks](#masks)
