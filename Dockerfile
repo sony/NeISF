@@ -27,6 +27,8 @@ RUN apt-get update && apt-get upgrade -y \
     tk-dev \
     libffi-dev \
     liblzma-dev \
+    libxkbcommon-x11-0 \
+    libgl1-mesa-dev \
  && git clone https://github.com/pyenv/pyenv.git $PYENV_ROOT \
  && $PYENV_ROOT/plugins/python-build/install.sh \
  && /usr/local/bin/python-build -v $PYTHON_VERSION $PYTHON_ROOT \
