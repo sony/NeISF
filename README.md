@@ -13,7 +13,7 @@ and Yusuke Moriuchi<sup>1</sup>
 
 This project is the implementation of "NeISF: Neural Incident Stokes Field for Geometry and Material Estimation (CVPR 2024)", which is a novel multi-view inverse rendering framework that reduces ambiguities using polarization cues.
 
-### [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Li_NeISF_Neural_Incident_Stokes_Field_for_Geometry_and_Material_Estimation_CVPR_2024_paper.html) | [Data](https://sonyjpn.sharepoint.com/sites/S110-NeISF) <!-- omit in toc -->
+### [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Li_NeISF_Neural_Incident_Stokes_Field_for_Geometry_and_Material_Estimation_CVPR_2024_paper.html) | [Data](https://sonyjpn.sharepoint.com/sites/S110-NeISF) | [Project](https://sony.github.io/NeISF) <!-- omit in toc -->
 
 
 ## Table of Contents <!-- omit in toc -->
