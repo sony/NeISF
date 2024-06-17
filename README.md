@@ -15,6 +15,8 @@ This project is the implementation of "NeISF: Neural Incident Stokes Field for G
 
 ### [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Li_NeISF_Neural_Incident_Stokes_Field_for_Geometry_and_Material_Estimation_CVPR_2024_paper.html) | [Data](https://sonyjpn.sharepoint.com/sites/S110-NeISF) | [Project](https://sony.github.io/NeISF) <!-- omit in toc -->
 
+A **Microsoft account** is required to download the [data](https://sonyjpn.sharepoint.com/sites/S110-NeISF). If you do not have an account, please create one first and access the [link](https://sonyjpn.sharepoint.com/sites/S110-NeISF). After a certain amount of time, the access rights will be granted and you will be able to download the data. Please note that your account information will not be retained.
+
 
 ## Table of Contents <!-- omit in toc -->
 - [Dependencies](#dependencies)
