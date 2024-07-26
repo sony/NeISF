@@ -17,6 +17,8 @@ This project is the implementation of "NeISF: Neural Incident Stokes Field for G
 
 A **Microsoft account** is required to download the [data](https://sonyjpn.sharepoint.com/sites/S110-NeISF). If you do not have an account, please create one first and access the [link](https://sonyjpn.sharepoint.com/sites/S110-NeISF). After a certain amount of time, the access rights will be granted and you will be able to download the data. Please note that your account information will not be retained.
 
+If the procedure above does not work, please send a message to [takeshi.uemori@sony.com](mailto:takeshi.uemori@sony.com).
+
 
 ## Table of Contents <!-- omit in toc -->
 - [Dependencies](#dependencies)
