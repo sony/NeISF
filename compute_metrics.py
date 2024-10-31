@@ -27,7 +27,7 @@ import json
 from pathlib import Path
 
 import numpy as np
-
+from mymodules.tensorutils import gamma
 import mymodules.evaluationutils as evalutil
 from mymodules.imageutils import MAX_16BIT, my_read_image
 
@@ -43,6 +43,10 @@ DOMAIN_NAMES_MUST_BE = [
     "s0", "s1", "s2", "albedo", "roughness", "diffuse", "specular", "rgb", "normal"
 ]
 
+def gamma_correct(img):
+    img_tensor = torch.from_numpy(img)
+    img_gamma = gamma(img_tensor).numpy()
+    return img_gamma
 
 if __name__ == '__main__':
     args = parser.parse_args()
@@ -98,6 +102,7 @@ if __name__ == '__main__':
                 est_img_path = est_path.joinpath("{:03d}_{}.png".format(ii+1, domain_name))
                 src_img = my_read_image(src_img_path) / MAX_16BIT
                 est_img = my_read_image(est_img_path) / MAX_16BIT
+                est_img = gamma_correct(est_img)
 
                 err = evalutil.calc_psnr(est_img, src_img, mask_img)
                 image_err_dict[est_img_path.stem] = f"PSNR: {err:.5f}"
