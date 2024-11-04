@@ -279,8 +279,8 @@ class NeISFDataset(MyDataset):
             w2c = c2w[:, :3].T  # (3, 3)
             self.w2c_pool.append(w2c.expand(height * width, 3, 3))
 
-            # store the forward camera axis in world coordinate
-            camera_axis = torch.tensor([[0., 1., 0.]]) @ w2c  # right axis of the camera in the world coordinate (1, 3)
+            # store the up camera axis in world coordinate
+            camera_axis = torch.tensor([[0., 1., 0.]]) @ w2c  # up axis of the camera in the world coordinate (1, 3)
             self.camera_axis_pool.append(camera_axis.expand(height * width, 3))
 
             # store rays origin and direction.
