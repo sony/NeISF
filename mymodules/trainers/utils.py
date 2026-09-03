@@ -22,7 +22,7 @@ def assign_device(gpu_num: int) -> torch.device:
     """ Returns devices according to the number of GPUs.
 
     Args:
-          gpu_num (int): the number of gpus you want to use. if you do not have any GPU, input 0.
+          gpu_num (int): the number of GPUs you want to use. if you do not have any GPU, input 0.
 
     Returns:
           torch.device: assigned device.
@@ -31,7 +31,7 @@ def assign_device(gpu_num: int) -> torch.device:
     if not isinstance(gpu_num, int):
         raise TypeError("gpu_num must be int.")
     if gpu_num < 0:
-        raise ValueError("gpu_num must be 0 or positive integer.")
+        raise ValueError("gpu_num must be 0 or a positive integer.")
 
     if gpu_num == 0:  # no gpu
         device = torch.device("cpu")
@@ -82,7 +82,7 @@ def generate_env_map_coordinate(u_res: int, v_res: int) -> Tensor:
 
 
 def replace_nans_infs_with_tiny(model: nn.Module):
-    """ Replace `nan` and `ìnf` to tiny values.
+    """ Replace `nan` and `inf` to tiny values.
     """
     with torch.no_grad():
         for param in model.parameters():
