@@ -69,7 +69,7 @@ class SHEmbedder(Embedder):
             (Tensor): the input direction embedded in the spherical harmonics encoding (n, sh_dim).
 
         Raises:
-            ValueError when sh_coords includes numbers except 1, 2, or 4.
+            ValueError when sh_coords includes numbers except 0, 1, 2, or 4.
         """
 
         result = torch.empty((ref_d.shape[0], self.out_dim), dtype=ref_d.dtype, device=ref_d.device)

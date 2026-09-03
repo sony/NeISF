@@ -63,7 +63,7 @@ class IncidentNet(nn.Module):
                     layer.linear = nn.utils.weight_norm(layer.linear)
                 else:
                     raise ValueError("all the weights are initialized to be zero. "
-                                     "weight normalization could produce`nan`value.")
+                                     "weight normalization could produce `nan` value.")
 
             setattr(self, "layer_{}".format(i), layer)
 
@@ -130,7 +130,7 @@ class BRDFNet(nn.Module):
                     layer.linear = nn.utils.weight_norm(layer.linear)
                 else:
                     raise ValueError("all the weights are initialized to be zero. "
-                                     "weight normalization could produce`nan`value.")
+                                     "weight normalization could produce `nan` value.")
 
             setattr(self, "layer_{}".format(i), layer)
 
